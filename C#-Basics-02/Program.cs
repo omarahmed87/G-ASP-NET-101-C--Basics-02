@@ -1,14 +1,19 @@
-﻿#region 12st answer
-//Declare a string? reviewer = null;. Print whether it is null. 
+﻿#region 13st answer
+//Declare a Book? book = null;. Use?.to safely read book.Title without crashing the 
+//program, and print the result. 
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        string? reviewer = null;
-        Console.WriteLine(reviewer == null);
+        Book? book = null;
+        Console.WriteLine(book?.Title);
 
+    }
+    class Book
+    {
+        public string Title { get; set; }
     }
 }
 
