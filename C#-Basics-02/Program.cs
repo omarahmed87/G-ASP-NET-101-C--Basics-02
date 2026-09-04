@@ -1,14 +1,15 @@
-﻿#region 5st answer
-//Declare an int pages = 300; then store it in a double variable without using a cast.
+﻿#region 6st answer
+//Declare a double price = 49.99; then convert it into an int using a cast. 
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        int pages = 300;
-        double newPages = pages;
-  
+
+        double price = 49.99;
+        int newPrice = (int)price;
+
     }
 }
 
