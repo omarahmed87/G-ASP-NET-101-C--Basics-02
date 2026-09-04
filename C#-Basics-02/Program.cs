@@ -1,17 +1,16 @@
-﻿#region 10st answer
-//Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int 
-//variable, and print both.
+﻿#region 11st answer
+//Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its 
+//value. 
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        int copies = 100;
-        object boxed = copies; //Boxing
-        int unboxed = (int)boxed; //Unboxing
-        Console.WriteLine(boxed);
-        Console.WriteLine(unboxed);
+        int? year = null;
+        Console.WriteLine(year.HasValue);
+        year = 2023;
+        Console.WriteLine(year);
 
     }
 }
