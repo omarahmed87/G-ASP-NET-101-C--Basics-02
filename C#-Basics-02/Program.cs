@@ -1,15 +1,13 @@
-﻿#region 6st answer
-//Declare a double price = 49.99; then convert it into an int using a cast. 
+﻿#region 7st answer
+//Given string pagesText = "464";, convert it into an int using the Convert class.
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-
-        double price = 49.99;
-        int newPrice = (int)price;
-
+        string pagesText = "464";
+        int pages = Convert.ToInt32(pagesText);
     }
 }
 
