@@ -1,16 +1,13 @@
-﻿#region 11st answer
-//Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its 
-//value. 
+﻿#region 12st answer
+//Declare a string? reviewer = null;. Print whether it is null. 
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        int? year = null;
-        Console.WriteLine(year.HasValue);
-        year = 2023;
-        Console.WriteLine(year);
+        string? reviewer = null;
+        Console.WriteLine(reviewer == null);
 
     }
 }
