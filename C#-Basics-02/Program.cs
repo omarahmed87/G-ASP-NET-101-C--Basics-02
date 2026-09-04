@@ -1,13 +1,22 @@
-﻿#region 7st answer
-//Given string pagesText = "464";, convert it into an int using the Convert class.
+﻿#region 8st answer
+////Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = 
+//"abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        string pagesText = "464";
-        int pages = Convert.ToInt32(pagesText);
+        string yearText = "2023";
+        int year = int.Parse(yearText);
+
+        string badText = "abc";
+        if (!int.TryParse(badText, out int result))
+        {
+            Console.WriteLine("Invalid number");
+        }
+
+
     }
 }
 
