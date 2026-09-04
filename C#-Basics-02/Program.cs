@@ -1,48 +1,19 @@
-﻿#region 2st answer
-//Using the Book class above, print the result of calling ToString(), Equals() (compare book
-//with itself), GetHashCode(), and GetType() on book.
+﻿#region 3st answer
+//Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it. 
+//int pages = "464";
+//Compile - time error — you can't put text (string) into an int variable. 
+//int pages = 464;
 #endregion
 
 class Program
 {
     static void Main(string[] args)
     {
-        Book book = new Book();
-        book.title = "Math";
-        book.pages = 10;
-
-        Book newBook = new Book();
-        newBook.title = "Math";
-        newBook.pages = 10;
-
-        Console.WriteLine(book.title);
-        Console.WriteLine(book.pages);
-        Console.WriteLine(book);
-        Console.WriteLine(book.Equals(newBook));
-        Console.WriteLine(book.Equals(book));
-        Console.WriteLine(book.GetHashCode());
-        Console.WriteLine(newBook.GetHashCode());
-        Console.WriteLine(book.GetType());
-        Console.WriteLine(newBook.GetType());
+        int pages = 464;
+        //this is a compile-time error ,we can't put text into an int variable.
+        //the solution is to remove the quotes.
+        
     }
 }
 
-class Book
-{
-    public string title;
-    public int pages;
-    public override string ToString()
-    {
-        return $"The title of book is:{title} and the pages is :{pages}";
-    }
-    public override bool Equals(object? obj)
-    {
-        Book newBook = (Book)obj;
-        return this.title == newBook.title && this.pages == newBook.pages;
-    }
 
-    public override int GetHashCode()
-    {
-        return HashCode.Combine(title, pages);
-    }
-}
